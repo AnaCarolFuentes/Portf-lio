@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="description" content="Portfólio de [Seu Nome] - Estudante de Engenharia de Computação">
+    <meta name="keywords" content="engenharia, computação, programação, desenvolvimento, estágio">
+    <meta name="author" content="Seu Nome">
+    <title>Seu Nome - Portfólio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <h2>Ana Carolina Fuentes</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#education" class="nav-link">Formação</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text animate-fade-in-left">
+                <h1>Olá, eu sou <span>Ana Carolina Fuentes</span></h1>
+                <h2 class="animate-fade-in-up delay-200">Estudante de Engenharia de Computação</h2>
+                <p class="animate-fade-in-up delay-300">Apaixonada por tecnologia, desenvolvimento de software e hardware, buscando oportunidades de estágio para aplicar conhecimentos e crescer profissionalmente.</p>
+                <div class="hero-buttons animate-fade-in-up delay-500">
+                    <a href="#contact" class="btn btn-secondary hover-glow">Entre em Contato</a>
+                    <a href="#projects" class="btn btn-secondary hover-lift">Ver Projetos</a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in-right delay-200">
+                <div class="profile-pic animate-float hover-glow">
+                    <img src="assets/images/Carol.jpeg" alt="Carol - Foto de perfil" class="profile-img">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Sobre Mim</h2>
+            <div class="about-content animate-on-scroll">
+                <div class="about-text">
+                    <p class="animate-on-scroll delay-200">Sou estudante de Engenharia de Computação com paixão por desenvolvimento de software e hardware. Tenho experiência em programação, conhecimentos iniciais em modelagem para impressões 3D, placas de circuito impresso e estou sempre buscando aprender novas tecnologias.</p>
+                    <p class="animate-on-scroll delay-300">Meu objetivo é conseguir um estágio onde possa aplicar meus conhecimentos teóricos em projetos reais, contribuindo para o crescimento da empresa enquanto desenvolvo minhas habilidades profissionais.</p>
+                    <div class="about-stats">
+                        <div class="stat animate-on-scroll delay-400 hover-lift">
+                            <h3>5+</h3>
+                            <p>Anos de Estudo</p>
+                        </div>
+                        <div class="stat animate-on-scroll delay-500 hover-lift">
+                            <h3>3+</h3>
+                            <p>Projetos Pessoais</p>
+                        </div>
+                        <div class="stat animate-on-scroll delay-600 hover-lift">
+                            <h3>3+</h3>
+                            <p>Linguagens</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Habilidades Pessoais</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Trabalho em equipe</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Empatia</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Resiliência</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Sentimento de equipe</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Proatividade</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Comunicação</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                          
+                            <span>Escuta ativa</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Comunicação clara</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Networking profissional</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Troca de conhecimentos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Produtividade</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Organização do tempo</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Priorização de tarefas</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Foco em resultados</span>
+                        </div>
+                        <div class="skill-item">
+                            <span>Atenção aos detalhes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Linguagens de Programação</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>C/C++</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Desenvolvimento Web</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Ferramentas & Tecnologias</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Experiências</h2>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll delay-200 hover-lift">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Robô de terreiro</h3>
+                        <p>Projeto de extensão desenvolvido para fazer o controle de um rover em áreas montanhosas. </p>
+                        <div class="project-tech">
+                            <span>Raspberry Pi</span>
+                            <span>ESP</span>
+                            <span>Impressão 3D</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Diretora de Marketing EJTuring</h3>
+                        <p>Gerenciar os setores de comunicação, vendas e marketing da Empresa Junior do curso de Engenharia de Computação</p>
+                        <div class="project-tech">
+                            <span>Softskills</span>
+                            <span>Social Media</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Atividades Extensionistas</h3>
+                        <p>Criação de projetos que relacionam diferentes áreas da Engenharia de Computação para levar o conhecimento à sociedade</p>
+                        <div class="project-tech">
+                            <span>IOT</span>
+                            <span>MQTT</span>
+                            <span>Python</span>
+                            <span>Softskills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Formação</h2>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Engenharia de Computação</h3>
+                        <h4>IFSULDEMINAS - POÇOS DE CALDAS</h4>
+                        <span class="timeline-date">2023 - 2027 (Previsão)</span>
+                        <p>Cursando Bacharelado em Engenharia de Computação com foco em desenvolvimento de software e hardware</p>
+                        <ul>
+                            <li>Disciplinas relevantes: Programação Orientada a Objetos, Projeto e Análise de Algoritmos, Estrutura de Dados, Banco de Dados, Sistemas Operacionais, Eletrônica Digital, Eletrônica Analógica e Redes de Computadores</li>
+                            <li>Projetos acadêmicos interdisciplinares</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Técnico em Informática</h3>
+                        <h4>IFSULDEMINAS - POÇOS DE CALDAS</h4>
+                        <span class="timeline-date">2020 - 2022</span>
+                        <p>Concluído com foco em desenvolvimento de software</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou sempre aberto a novas oportunidades e conversas interessantes. Entre em contato comigo!</p>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>anacarolzinha.fuentes@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(35) 98438-0371</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(35) 98438-0371</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Poços de Caldas, MG</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ana-carolina-fuentes-ab7694304/" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/AnaCarolFuentes" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="contact-buttons">
+                        <a href="#" onclick="openWhatsApp()" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            Conversar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ana Carolina Fuentes. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float" id="whatsapp-btn">
+        <a href="#" onclick="showContactOptions()" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Fale Comigo</span>
+        </a>
+    </div>
+
+    <script src="js/script-simple.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/whatsapp-integration.js"></script>
+</body>
+</html>
